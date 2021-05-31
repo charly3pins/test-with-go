@@ -6,4 +6,4 @@ The basic ones are the `t.Log` and `t.Logf`. These will be printed only if a tes
 
 For a mark a test as a failed the `testing.T` type provides 2 methods for that. `t.Fail` will mark the test as failed but keep running. `t.FailNow` will fail the execution of the test and stop the execution.
 
-With those methods in mind, ones for logging and others for failing, the type provides the methods that are most used that are basically a combination of the ones checked before. It has the `t.Error` and `t.Errorf`; these are a combo of `t.Log`/`t.Logf` plus `t.Log`. And then the other methods that provides are the `t.Fatal` and `t.Fatalf`; these are a combo of `t.Log`/`t.Logf` is `t.FailNow()`. 
+With those methods in mind, ones for logging and others for failing, the type provides the methods that are most used that are basically a combination of the ones checked before. It has the `t.Error` and `t.Errorf`; these are a combo of `t.Log`/`t.Logf` plus `t.Fail`. And then the other methods that provides are the `t.Fatal` and `t.Fatalf`; these are a combo of `t.Log`/`t.Logf` is `t.FailNow()`. 
