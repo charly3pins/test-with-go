@@ -1,0 +1,3 @@
+# Reflect's DeepEqual function
+https://pkg.go.dev/reflect#DeepEqual
+`DeepEqual()` is a function really useful to compare objects, slices, arrays...

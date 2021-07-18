@@ -1,0 +1,1 @@
+Create a shared setup at the begining of your tests and define the teardowns (prefer to use defer() to not forget them). Then you can extract your "real" tests in a different private functions where you pass the setup and avoid repeating the boilerplate for initialize your tests and then run subtests for each test case.

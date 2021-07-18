@@ -1,0 +1,2 @@
+Subtests allow you to control more granular the execution of the tests so you can fail one and stop it using the `Fatal` but doesn't imply to stop the other subtests. Doing that all the table test can be executed without worrying about being stopped on the 1st of N tests.
+Also the table test can be created using a map instead of an []struct where the key is the name of the test that the `t.Run()` needs as a first argument or use another field inside the struct for that.

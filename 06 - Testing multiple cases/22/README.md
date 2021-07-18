@@ -1,0 +1,2 @@
+Use the special `testing.M` type. Is called before all your tests run.
+This type only has the `run` method which returns `exitCode`. You need to pass this code to the `os.Exit()`. That raises a possible issue is that the `defers` are not called because the os.Exit() kills the execution straightwordard. So for that reason we need to create a helper function for run our tests and execute there the defers and from the `TestMain` call that helper.
